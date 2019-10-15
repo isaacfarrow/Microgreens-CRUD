@@ -1,0 +1,67 @@
+﻿@model IEnumerable<Microgreens.Models.SowRatesL>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.SowWeight)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TraysPerPack)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CostPerTray)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DateIn)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DateOut)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Product)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.SowWeight)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.TraysPerPack)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.CostPerTray)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.DateIn)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.DateOut)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Product.Id)
+                </td>
+
+                <td>
+                    <a asp-action="Edit" asp-route-id="@item.SowRatesId">Edit</a> |
+                    <a asp-action="Details" asp-route-id="@item.SowRatesId">Details</a> |
+                    <a asp-action="Delete" asp-route-id="@item.SowRatesId">Delete</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

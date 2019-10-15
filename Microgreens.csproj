@@ -1,0 +1,119 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+    <UserSecretsId>aspnet-VisistorManagment2019Students-9DF7D8C7-B6D8-40AF-8047-8ECDA3DE0302</UserSecretsId>
+    <AspNetCoreHostingModel>InProcess</AspNetCoreHostingModel>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Remove="Views\Home\index.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="Views\Home\index.cshtml" />
+    <None Include="wwwroot\contactform\contactform.js" />
+    <None Include="wwwroot\contactform\Readme.txt" />
+    <None Include="wwwroot\fonts\font-awesome\fonts\fontawesome-webfont.svg" />
+    <None Include="wwwroot\fonts\font-awesome\fonts\fontawesome-webfont.woff2" />
+    <None Include="wwwroot\fonts\font-awesome\less\animated.less" />
+    <None Include="wwwroot\fonts\font-awesome\less\bordered-pulled.less" />
+    <None Include="wwwroot\fonts\font-awesome\less\core.less" />
+    <None Include="wwwroot\fonts\font-awesome\less\fixed-width.less" />
+    <None Include="wwwroot\fonts\font-awesome\less\font-awesome.less" />
+    <None Include="wwwroot\fonts\font-awesome\less\icons.less" />
+    <None Include="wwwroot\fonts\font-awesome\less\larger.less" />
+    <None Include="wwwroot\fonts\font-awesome\less\list.less" />
+    <None Include="wwwroot\fonts\font-awesome\less\mixins.less" />
+    <None Include="wwwroot\fonts\font-awesome\less\path.less" />
+    <None Include="wwwroot\fonts\font-awesome\less\rotated-flipped.less" />
+    <None Include="wwwroot\fonts\font-awesome\less\stacked.less" />
+    <None Include="wwwroot\fonts\font-awesome\less\variables.less" />
+    <None Include="wwwroot\fonts\font-awesome\scss\font-awesome.scss" />
+    <None Include="wwwroot\fonts\font-awesome\scss\_animated.scss" />
+    <None Include="wwwroot\fonts\font-awesome\scss\_bordered-pulled.scss" />
+    <None Include="wwwroot\fonts\font-awesome\scss\_core.scss" />
+    <None Include="wwwroot\fonts\font-awesome\scss\_fixed-width.scss" />
+    <None Include="wwwroot\fonts\font-awesome\scss\_icons.scss" />
+    <None Include="wwwroot\fonts\font-awesome\scss\_larger.scss" />
+    <None Include="wwwroot\fonts\font-awesome\scss\_list.scss" />
+    <None Include="wwwroot\fonts\font-awesome\scss\_mixins.scss" />
+    <None Include="wwwroot\fonts\font-awesome\scss\_path.scss" />
+    <None Include="wwwroot\fonts\font-awesome\scss\_rotated-flipped.scss" />
+    <None Include="wwwroot\fonts\font-awesome\scss\_stacked.scss" />
+    <None Include="wwwroot\fonts\font-awesome\scss\_variables.scss" />
+    <None Include="wwwroot\fonts\fonts\glyphicons-halflings-regular.svg" />
+    <None Include="wwwroot\fonts\fonts\glyphicons-halflings-regular.woff2" />
+    <None Include="wwwroot\img\svg\asteroid.svg" />
+    <None Include="wwwroot\img\svg\cloud-computing.svg" />
+    <None Include="wwwroot\img\svg\cloud.svg" />
+    <None Include="wwwroot\img\svg\code.svg" />
+    <None Include="wwwroot\img\svg\design-tool.svg" />
+    <None Include="wwwroot\img\svg\paint-palette.svg" />
+    <None Include="wwwroot\img\svg\pixel.svg" />
+    <None Include="wwwroot\img\svg\planet.svg" />
+    <None Include="wwwroot\img\svg\tools.svg" />
+    <None Include="wwwroot\img\svg\vector.svg" />
+    <None Include="wwwroot\js\main.js" />
+    <None Include="wwwroot\lib\bootstrap\js\bootstrap.bundle.min.js" />
+    <None Include="wwwroot\lib\bootstrap\js\bootstrap.min.js" />
+    <None Include="wwwroot\lib\easing\easing.js" />
+    <None Include="wwwroot\lib\easing\easing.min.js" />
+    <None Include="wwwroot\lib\font-awesome\fonts\fontawesome-webfont.svg" />
+    <None Include="wwwroot\lib\font-awesome\fonts\fontawesome-webfont.woff2" />
+    <None Include="wwwroot\lib\jquery\jquery-migrate.min.js" />
+    <None Include="wwwroot\lib\jquery\jquery.min.js" />
+    <None Include="wwwroot\lib\modal-video\js\modal-video.js" />
+    <None Include="wwwroot\lib\modal-video\js\modal-video.min.js" />
+    <None Include="wwwroot\lib\owlcarousel\LICENSE" />
+    <None Include="wwwroot\lib\owlcarousel\links.php" />
+    <None Include="wwwroot\lib\owlcarousel\owl.carousel.js" />
+    <None Include="wwwroot\lib\owlcarousel\owl.carousel.min.js" />
+    <None Include="wwwroot\lib\superfish\hoverIntent.js" />
+    <None Include="wwwroot\lib\superfish\superfish.js" />
+    <None Include="wwwroot\lib\superfish\superfish.min.js" />
+    <None Include="wwwroot\lib\wow\wow.js" />
+    <None Include="wwwroot\lib\wow\wow.min.js" />
+    <None Include="wwwroot\mail\contact_me.php" />
+  </ItemGroup>
+
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.App" />
+    <PackageReference Include="Microsoft.AspNetCore.Razor.Design" Version="2.2.0" PrivateAssets="All" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="2.2.6" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.2.3" />
+  </ItemGroup>
+
+
+  <ItemGroup>
+    <Folder Include="Views\Yields\" />
+    <Folder Include="wwwroot\contactform\" />
+    <Folder Include="wwwroot\css\" />
+    <Folder Include="wwwroot\img\blog\" />
+    <Folder Include="wwwroot\img\screen\" />
+    <Folder Include="wwwroot\img\svg\" />
+    <Folder Include="wwwroot\img\team\" />
+    <Folder Include="wwwroot\js\" />
+    <Folder Include="wwwroot\lib\animate\" />
+    <Folder Include="wwwroot\lib\bootstrap\css\" />
+    <Folder Include="wwwroot\lib\bootstrap\js\" />
+    <Folder Include="wwwroot\lib\easing\" />
+    <Folder Include="wwwroot\lib\font-awesome\css\" />
+    <Folder Include="wwwroot\lib\font-awesome\fonts\" />
+    <Folder Include="wwwroot\lib\jquery\" />
+    <Folder Include="wwwroot\lib\modal-video\css\" />
+    <Folder Include="wwwroot\lib\modal-video\js\" />
+    <Folder Include="wwwroot\lib\owlcarousel\assets\" />
+    <Folder Include="wwwroot\lib\superfish\" />
+    <Folder Include="wwwroot\lib\wow\" />
+  </ItemGroup>
+
+
+  <ItemGroup>
+    <Content Update="wwwroot\js\main.js">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+</Project>
