@@ -22,12 +22,6 @@
                 @Html.DisplayNameFor(model => model.CostPerTray)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.DateIn)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.DateOut)
-            </th>
-            <th>
                 @Html.DisplayNameFor(model => model.Product)
             </th>
             <th></th>
@@ -47,13 +41,7 @@
                     @Html.DisplayFor(modelItem => item.CostPerTray)
                 </td>
                 <td>
-                    @Html.DisplayFor(modelItem => item.DateIn)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.DateOut)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.Product.Id)
+                    @Html.DisplayFor(modelItem => item.ProductsId)
                 </td>
 
                 <td>

@@ -94,7 +94,6 @@
     <Folder Include="wwwroot\img\screen\" />
     <Folder Include="wwwroot\img\svg\" />
     <Folder Include="wwwroot\img\team\" />
-    <Folder Include="wwwroot\js\" />
     <Folder Include="wwwroot\lib\animate\" />
     <Folder Include="wwwroot\lib\bootstrap\css\" />
     <Folder Include="wwwroot\lib\bootstrap\js\" />

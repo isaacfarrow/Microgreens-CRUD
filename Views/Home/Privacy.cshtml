@@ -1,8 +1,68 @@
 ﻿@{
-    ViewData["Title"] = "Privacy Policy";
+    ViewData["Title"] = "CRUD using the API";
 }
-<h1>@ViewData["Title"]</h1>
 
-<p>Use this page to detail your site's privacy policy.</p>
-<h1>@ViewBag.Steve</h1>
-<h2>@ViewData["Sam"]</h2>
+<p></p>
+<div id="services">
+    <p></p>
+    <div class="container">
+
+        <h3>Product CRUD</h3>
+
+        <div class="row">
+            <!-- <div class="col-md-2, col-lg-2"> -->
+
+
+            <h5>Add a Product</h5>
+
+            @* Text fields for adding data *@
+            <form action="javascript:void(0);" method="POST" onsubmit="addItem()">
+                <input class="form-control" type="text" id="add-Name" placeholder="Add Name">
+                <input class="form-control" type="text" id="add-Price" placeholder="Add Price">
+                <input class="form-control" type="text" id="add-Quantity" placeholder="Add Quantity">
+                <input class="form-control" type="text" id="add-ShippingPrice" placeholder="Add Shipping Price">
+                <input type="submit" value="Add">
+            </form>
+
+            @* Text fields for edit data *@
+            <h5>Edit a Product</h5>
+            <form class="my-form">
+                <input type="text" id="edit-Id">
+                <input class="form-control" type="text" id="edit-Name">
+                <input class="form-control" type="text" id="edit-Price">
+                <input class="form-control" type="text" id="edit-Quantity">
+                <input class="form-control" type="text" id="edit-ShippingPrice">
+                <input type="submit" value="Save">
+            </form>
+        </div>
+        @*<div class="col-md-2, col-lg-2">
+        *@
+        <p id="counter"> </p>
+
+        @* Table headers *@
+        <table class="table table-striped table-hover">
+            <tr>
+                <th width="15%">Name</th>
+                <th width="10%">Price</th>
+                <th width="10%">Quantity</th>
+                <th width="10%">Shipping Price</th>
+            </tr>
+            <tbody id="allProducts"></tbody>
+        </table>
+
+
+        @*
+            </div>*@
+    </div>
+</div>
+
+@section Scripts {
+
+    <script src="~/lib/jquery/jquery.min.js"></script>
+
+    <script src="~/js/ProductsAPI.js"></script>
+
+}
+
+
+

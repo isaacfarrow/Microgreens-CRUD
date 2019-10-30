@@ -46,7 +46,7 @@ namespace Microgreens
 
 
             services.AddDbContext<ProductsDbContext>(options =>
-                options.UseSqlite("Data Source = Vman.db"));
+                options.UseSqlite("Data Source = MicroPrices.db"));
 
 
             services.AddDefaultIdentity<IdentityUser>()

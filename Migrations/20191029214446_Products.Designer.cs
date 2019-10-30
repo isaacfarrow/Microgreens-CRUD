@@ -3,14 +3,16 @@ using System;
 using Microgreens.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace Microgreens.Migrations
 {
     [DbContext(typeof(ProductsDbContext))]
-    partial class VisitorDbContextModelSnapshot : ModelSnapshot
+    [Migration("20191029214446_Products")]
+    partial class Products
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -20,6 +22,10 @@ namespace Microgreens.Migrations
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd();
+
+                    b.Property<DateTime>("DateIn");
+
+                    b.Property<DateTime>("DateOut");
 
                     b.Property<string>("Name");
 
@@ -40,6 +46,10 @@ namespace Microgreens.Migrations
                         .ValueGeneratedOnAdd();
 
                     b.Property<decimal>("CostPerTray");
+
+                    b.Property<DateTime>("DateIn");
+
+                    b.Property<DateTime>("DateOut");
 
                     b.Property<int>("ProductsId");
 
@@ -63,6 +73,12 @@ namespace Microgreens.Migrations
                 {
                     b.Property<int>("YieldId")
                         .ValueGeneratedOnAdd();
+
+                    b.Property<decimal>("CostPerTray");
+
+                    b.Property<DateTime>("DateIn");
+
+                    b.Property<DateTime>("DateOut");
 
                     b.Property<int>("ProductsId");
 

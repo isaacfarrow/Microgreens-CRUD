@@ -11,38 +11,38 @@
     <h4>Yields</h4>
     <hr />
     <dl class="row">
-        <dt class = "col-sm-2">
+        <dt class="col-sm-2">
             @Html.DisplayNameFor(model => model.Yield)
         </dt>
-        <dd class = "col-sm-10">
+        <dd class="col-sm-10">
             @Html.DisplayFor(model => model.Yield)
         </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.CostPerTray)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.CostPerTray)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.DateIn)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.DateIn)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.DateOut)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.DateOut)
-        </dd>
-        <dt class = "col-sm-2">
+        @*<dt class = "col-sm-2">
+                @Html.DisplayNameFor(model => model.CostPerTray)
+            </dt>
+            <dd class = "col-sm-10">
+                @Html.DisplayFor(model => model.CostPerTray)
+            </dd>*@
+        @*<dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.DateIn)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.DateIn)
+            </dd>
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.DateOut)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.DateOut)
+            </dd>*@
+        <dt class="col-sm-2">
             @Html.DisplayNameFor(model => model.Product)
         </dt>
-        <dd class = "col-sm-10">
+        <dd class="col-sm-10">
             @Html.DisplayFor(model => model.Product.Id)
-        </dd class>
+        </dd>
     </dl>
-    
+
     <form asp-action="Delete">
         <input type="hidden" asp-for="YieldId" />
         <input type="submit" value="Delete" class="btn btn-danger" /> |

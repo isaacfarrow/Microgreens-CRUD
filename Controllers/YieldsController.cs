@@ -57,7 +57,7 @@ namespace Microgreens.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("YieldId,Yield,CostPerTray,ProductsId,DateIn,DateOut")] Yields yields)
+        public async Task<IActionResult> Create([Bind("YieldId,Yield,ProductsId")] Yields yields)
         {
             if (ModelState.IsValid)
             {
@@ -91,7 +91,7 @@ namespace Microgreens.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("YieldId,Yield,CostPerTray,ProductsId,DateIn,DateOut")] Yields yields)
+        public async Task<IActionResult> Edit(int id, [Bind("YieldId,Yield,ProductsId")] Yields yields)
         {
             if (id != yields.YieldId)
             {

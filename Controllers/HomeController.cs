@@ -42,7 +42,7 @@ namespace Microgreens
             return View();
         }
 
-        public IActionResult StaffNamesAPI()
+        public IActionResult ProductAPI()
         {
             return View();
         }

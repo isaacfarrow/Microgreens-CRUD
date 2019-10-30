@@ -90,7 +90,7 @@ namespace Microgreens.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,FirstName,LastName,Business,DateIn,DateOut")] Visitors SowRatesL)
+        public async Task<IActionResult> Edit(int id, [Bind("SowRatesId,SowWeight,TraysPerPack,CostPerTray, ProductsId,DateIn,DateOut")] Visitors SowRatesL)
         {
             if (id != SowRatesL.Id)
             {
